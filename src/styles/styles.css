@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(120deg, #000000,#a80d76);
+    background: linear-gradient(120deg, #000000,#0b6d8b);
     gap: 20px;
 }
 
@@ -110,6 +110,6 @@
 
 @media screen and (max-width: 650px) {
     .card {
-        width: 100%;
+        width: 50%;
     }
 }
