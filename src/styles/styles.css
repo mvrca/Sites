@@ -7,21 +7,40 @@
     font-family:"Montserrat", sans-serif;
 }
 
-#title{
+body{
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, #000000,#0b6d8b);
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    text-align: center;
 }
 
+#title{
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #ffffff39;
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+    
+}
+
+
+
 #allcards{
-    top: 100px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(120deg, #000000,#0b6d8b);
-    gap: 20px;
 }
 
 
@@ -36,6 +55,9 @@
     border-radius: 20px;
     box-shadow: 0px 35px 80px rgba(0,0,0,0.15);
     transition: 0.5s;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .card:hover{
@@ -111,5 +133,13 @@
 @media screen and (max-width: 650px) {
     .card {
         width: 50%;
+    }
+
+    #title h1 {
+        font-size: 18px;
+    }
+
+    body{
+        background: linear-gradient(90deg, #000000,#0b6d8b);
     }
 }
